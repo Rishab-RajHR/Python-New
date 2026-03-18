@@ -58,3 +58,7 @@ print(hr.endswith("basil"))
 print(hr.replace("basil", "Tovino"))
 print(hr.find("name"))
 print(hr.count("name"))
+
+name = input("Enter your name: ")
+print(f'your name is uppercase: {name.upper()}')
+print(f'your name has {len(name)} characters')
