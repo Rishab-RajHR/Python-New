@@ -37,10 +37,58 @@ fruits[1] = 'blueberry'  # Change 'banana' to 'blueberry'
 print(fruits) # Output: ['apple', 'blueberry', 'cherry', 'date', 'elderberry']
 
 
-# Slicing
+
+
+# Slicing List
 fruits = ['apple', 'banana', 'cherry', 'date', 'elderberry']
 
 # slicing
 # list_num = [start_idx, end_idx] (end_idx not included)
 
 print(fruits[1:4])
+print(fruits[:4])
+print(fruits[1:])
+print(fruits[-3:-1])
+
+
+
+# Useful Methods
+
+num3 = [10,30,80,12]
+num3.append(50)
+print(num3)
+
+
+# remove method 
+num4 = [10,30,80,12]
+num4.remove(30)
+print(num4)
+
+
+# For removing entire list
+num5 = [10,30,80,12]
+num5.clear()
+print(num5)
+
+
+# through indexing
+num6 = [10,30,80,12]
+num6.pop(2)
+print(num6)
+
+
+# For inserting at particular position
+num7 = [10,30,80,12]
+num7.insert(2, 100)
+print(num7)
+
+
+# For sorting getting the element in ascending order
+num8 = [10,30,80,12]
+num8.sort()
+print(num8)
+
+# We can also do sorting in string
+num9 = ['b', 'c', 'd', 'e', 'a']
+num9.sort()
+print(num9)
