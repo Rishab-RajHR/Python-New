@@ -92,3 +92,10 @@ print(num8)
 num9 = ['b', 'c', 'd', 'e', 'a']
 num9.sort()
 print(num9)
+
+
+
+# We can also do sorting in string in descending order
+num10 = ['b', 'c', 'd', 'e', 'a']
+num10.sort(reverse=True)
+print(num10)
