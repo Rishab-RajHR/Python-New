@@ -118,4 +118,5 @@ print(student4.items())
 
 # update method
 print(student4.update({"name": "Raman Singh"}))
+print(student4)
 
