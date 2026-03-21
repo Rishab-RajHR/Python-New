@@ -87,3 +87,35 @@ print(user["user1"])
 # Accessing the Nested Dictionary particular value
 print(user["user1"]["name"])
  
+
+
+
+# Dictionary Methods
+
+student4 = {
+     "name": "John Doe",
+     "age": 20,
+     "is_enrolled": True,
+     "courses": {
+         "math": 95,
+          "science": 88,
+     },
+}
+
+# Key method
+print(student4.keys())
+# Getting as the list
+print(list(student4.keys()))
+
+
+# value method
+print(student4.values())
+
+
+# items method
+print(student4.items())
+
+
+# update method
+print(student4.update({"name": "Raman Singh"}))
+
