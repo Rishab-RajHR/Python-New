@@ -44,5 +44,42 @@ student2 = {
     "course": "Python Programming",
 }
 student2["marks"] = 95
+student2["age"] = 21
 print(student2)
+
+
+
+# For deleting values in Dictionaries
+student3 = {
+   "name" : "Alex Pandian",
+   "age" : 20,
+   "passed": True,
+    "course": "Python Programming",
+}
+
+# del student3["course"]
+# print(student3)
+
+# student3.pop("age")
+# print(student3)
+
+student3.clear()
+print(student3)
+
+
+
+
+# Nested Dictionary => It is the dictionary inside the dictionary
+
+user = {
+   "user1" : {"name": "Alex", "Age": 30},
+   "user1" : {"name": "Joe", "Age": 31},
+}
+
+# Accessing the Dictionary
+print(user)
+
+
+# Accessing the Nested Dictionary
+print(user["user1"])
  
