@@ -73,7 +73,7 @@ print(student3)
 
 user = {
    "user1" : {"name": "Alex", "Age": 30},
-   "user1" : {"name": "Joe", "Age": 31},
+   "user2" : {"name": "Joe", "Age": 31},
 }
 
 # Accessing the Dictionary
@@ -82,4 +82,8 @@ print(user)
 
 # Accessing the Nested Dictionary
 print(user["user1"])
+
+
+# Accessing the Nested Dictionary particular value
+print(user["user1"]["name"])
  
