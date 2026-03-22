@@ -26,3 +26,22 @@ my_set2.add(2)
 
 print(my_set2)
 print(len(my_set2))
+
+
+
+# Adding or removing values
+num = {2,3,1,4}
+# num.add(5)
+num.remove(2)
+print(num)
+
+
+# Set is unordered because its ordered changes every time
+num1 = {2,3,1,"Mohit",4}
+print(num1)
+
+
+# Discard means if element is not found there will be no error
+num2 = {2,3,1,4}
+num2.discard(6)
+print(num2)
