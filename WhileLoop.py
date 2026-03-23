@@ -12,3 +12,12 @@ num = 1
 while num <= 10:
   print(num)
   num += 1
+print("Loop finished")
+
+
+# In Reverse Order
+num1 = 10
+while num1 >= 1:
+  print(num1)
+  num1 -= 1
+print("Loop finished")
