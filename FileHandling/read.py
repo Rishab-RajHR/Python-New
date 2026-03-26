@@ -2,5 +2,13 @@
 
 # To open a file
 f = open("test.txt","r")
-data = f.read()
-print(data)
+# data = f.read(2) => for reading limited characters
+# data = f.read()
+# print(data)
+
+# For printing line by line
+line1 = f.readline()
+line2 = f.readline()
+print(line1)
+print(line2)
+f.close()
