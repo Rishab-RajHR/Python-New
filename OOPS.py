@@ -43,16 +43,30 @@
 
 
 
+# class Person:
+#    def __init__(self,name,age):
+#       self.name = name
+#       self.age = age
+#       print("Person Created")
+
+# p1 = Person("Alex", 30)
+# print(p1.name)
+# print(p1.age)
+
+
 class Person:
-   def __init__(self,name,age):
-      self.name = name
-      self.age = age
-      print("Person Created")
+    def __init__(self,name,age):
+        self.name = name
+        self.age = age
+        print("Person created")
 
-p1 = Person("Alex", 30)
-print(p1.name)
-print(p1.age)
+    def display(self):
+        print(f"Name: {self.name}, Age: {self.age}")
 
+p1 = Person("Alex", 32)
+p1.display()
+# print(p1.name)
+# print(p1.age)
 
 
 
