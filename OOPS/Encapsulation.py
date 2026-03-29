@@ -1,0 +1,1 @@
+# Abstraction is about hiding complexity — showing only what's necessary and concealing the implementation details.
