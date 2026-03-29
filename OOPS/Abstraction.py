@@ -1,4 +1,4 @@
-# Encapsulation is about bundling data and methods together inside a class, and restricting direct access to internal state. 
+# Abstraction is about hiding complexity — showing only what's necessary and concealing the implementation details.
 
 class Vehicle:
     def __init__(self):
@@ -12,3 +12,22 @@ class Vehicle:
 
 car1 = Vehicle()
 car1.start_engine()
+
+
+
+
+# Using Abstract Base Class (ABC) to achieve abstraction in Python
+
+from abc import ABC, abstractmethod
+
+class Vehicle(ABC):
+    @abstractmethod
+    def start_engine(self):
+        pass
+    
+class Car(Vehicle):
+    def start_engine(self):
+        print("Car started.")
+
+car = Car()
+car.start_engine()
