@@ -27,8 +27,8 @@ def add_student(name, age, grade):
   )
   conn.commit()
   print(f"Student added successfully.")
-  add_student('Alex', 23, 'A')
-  add_student('Tovino', 25, 'B')
+add_student('Alex', 23, 'A')
+add_student('Tovino', 25, 'B')
 
 # Function to retrieve all students
 
@@ -40,7 +40,7 @@ def update_student(student_id, new_name, new_age, new_grade):
    cursor.execute(
         '''UPDATE students
         SET name = ? , age = ? , grade = ?
-        WHERE id = ?'''(new_name, new_age, new_grade, student_id)
+        WHERE id = ?''', (new_name, new_age, new_grade, student_id)
    )
 update_student(1, 'Alex Pandian', 28, 'A+')
 
@@ -55,7 +55,7 @@ fetch_all_students()
 # Function to delete a student by ID
 
 def delete_student(student_id):
-   cursor.execute('DELETE FROM students WHERE id = ?', (student_id))
+   cursor.execute('DELETE FROM students WHERE id = ?', (student_id,))
    conn.commit()
    print(f'Student deleted successfully.')
 delete_student(2)
