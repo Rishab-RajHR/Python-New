@@ -13,5 +13,16 @@ label.pack()
 entry = tk.Entry(root)
 entry.pack()
 
+# Create a Button with Functionality
+def greet():
+    name = entry.get()
+    result = label.config(text=f"Hello, {name}!")
+
+btn = tk.Button(root, text="Greet me", command=greet)
+btn.pack()
+
+result_label = tk.Label(root, text="")
+result_label.pack()
+
 # Start GUI
 root.mainloop()
