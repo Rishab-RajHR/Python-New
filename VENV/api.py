@@ -7,14 +7,36 @@ import requests
 # print("Status: ",response.status_code)
 # print("Data: ",response.json())
 
-url = "https://jsonplaceholder.typicode.com/posts"
 
-new_post = {
-    "title": "Alex Pandian",
-    "body": "This is the post created by Alex.",
+# POST API
+
+# url = "https://jsonplaceholder.typicode.com/posts"
+
+# new_post = {
+#     "title": "Alex Pandian",
+#     "body": "This is the post created by Alex.",
+#     "userId": 1
+# }
+
+# response = requests.post(url, json=new_post)
+# print("Status: ", response.status_code)
+# print("Data: ", response.json())
+
+# PUT => Full data update
+
+url = "https://jsonplaceholder.typicode.com/posts/1"
+
+new_data = {
+    "title": "Updated Title",
+    "body": "This is the updated body of the post.",
     "userId": 1
 }
 
-response = requests.post(url, json=new_post)
+response = requests.put(url, json=new_data)
+
 print("Status: ", response.status_code)
 print("Data: ", response.json())
+
+# Patch => Partial data update
+
+
