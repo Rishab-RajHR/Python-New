@@ -37,17 +37,33 @@ import requests
 # print("Status: ", response.status_code)
 # print("Data: ", response.json())
 
+
 # Patch => Partial data update
+
+# url = "https://jsonplaceholder.typicode.com/posts/1"
+
+# new_data = {
+#    "title": "Updated Title Two"
+# }
+
+# response = requests.patch(url, json=new_data)
+
+# print("Status: ", response.status_code)
+# print("Data: ", response.json())
+
+
+# Delete => Remove the Field
 
 url = "https://jsonplaceholder.typicode.com/posts/1"
 
-new_data = {
-   "title": "Updated Title"
-}
-
-response = requests.patch(url, json=new_data)
+response = requests.delete(url)
 
 print("Status: ", response.status_code)
-print("Data: ", response.json())
+if response.status_code == 200:
+   print("Post deleted successfully.")
+else:
+   print("Failed to delete the post.")
+
+
 
 
