@@ -24,19 +24,30 @@ import requests
 
 # PUT => Full data update
 
+# url = "https://jsonplaceholder.typicode.com/posts/1"
+
+# new_data = {
+#     "title": "Updated Title",
+#     "body": "This is the updated body of the post.",
+#     "userId": 1
+# }
+
+# response = requests.put(url, json=new_data)
+
+# print("Status: ", response.status_code)
+# print("Data: ", response.json())
+
+# Patch => Partial data update
+
 url = "https://jsonplaceholder.typicode.com/posts/1"
 
 new_data = {
-    "title": "Updated Title",
-    "body": "This is the updated body of the post.",
-    "userId": 1
+   "title": "Updated Title"
 }
 
-response = requests.put(url, json=new_data)
+response = requests.patch(url, json=new_data)
 
 print("Status: ", response.status_code)
 print("Data: ", response.json())
-
-# Patch => Partial data update
 
 
