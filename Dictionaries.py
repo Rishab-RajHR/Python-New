@@ -75,6 +75,7 @@ print(student3)
 user = {
    "user1" : {"name": "Alex", "Age": 30},
    "user2" : {"name": "Joe", "Age": 31},
+   "user3":{"name"}
 }
 
 # Accessing the Dictionary
