@@ -42,6 +42,7 @@ student2 = {
    "age" : 20,
    "passed": True,
     "course": "Python Programming",
+   "game":"cricket"
 }
 student2["marks"] = 95
 student2["age"] = 21
