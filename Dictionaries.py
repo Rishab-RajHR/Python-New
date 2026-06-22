@@ -17,7 +17,7 @@ print("Student Details", student)
 print(type(student))
 #print(len(student))
 print(hello)
-
+print(kam)
 
 # For accessing the Dictionaries
 student1 = {
